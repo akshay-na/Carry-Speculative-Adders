@@ -1,0 +1,421 @@
+--------------------------------------------------------------------
+|                      Xilinx XPower Analyzer                      |
+--------------------------------------------------------------------
+| Release                | 14.7 - P.20131013 (nt64)                |
+| Command Line           | Generated from Graphical User Interface |
+--------------------------------------------------------------------
+
+--------------------------------
+|      Table of Contents       |
+--------------------------------
+| 1.  Settings                 |
+| 1.1.  Project                |
+| 1.2.  Device                 |
+| 1.3.  Environment            |
+| 1.4.  Default Activity Rates |
+| 2.  Summary                  |
+| 2.1.  On-Chip Power Summary  |
+| 2.2.  Thermal Summary        |
+| 2.3.  Power Supply Summary   |
+| 2.4.  Confidence Level       |
+| 3.  Detailed Reports         |
+| 3.1.  By Hierarchy           |
+| 3.2.  By Clock Domain        |
+| 3.3.  By Resource Type       |
+| 3.3.1.  Core Dynamic         |
+| 3.3.1.1.  Logic              |
+| 3.3.1.2.  Signals            |
+| 3.3.2.  IO                   |
+--------------------------------
+
+1.  Settings
+1.1.  Project
+-----------------------------------------
+|                Project                |
+-----------------------------------------
+| Design File               | kogge.ncd |
+| Settings File             | NA        |
+| Physical Constraints File | kogge.pcf |
+| Simulation Activity File  | NA        |
+| Design Nets Matched       | NA        |
+| Simulation Nets Matched   | NA        |
+-----------------------------------------
+
+1.2.  Device
+-----------------------------------------------
+|                   Device                    |
+-----------------------------------------------
+| Family           | Spartan3                 |
+| Part             | xc3s200                  |
+| Package          | pq208                    |
+| Temp Grade       | Commercial               |
+| Process          | Typical                  |
+| Speed Grade      | -5                       |
+| Characterization | PRODUCTION,v1.2,06-25-09 |
+-----------------------------------------------
+
+1.3.  Environment
+---------------------------
+|       Environment       |
+---------------------------
+| Ambient Temp (C) | 25.0 |
+| Use custom TJA?  | No   |
+| Custom TJA (C/W) | NA   |
+| Airflow (LFM)    | 0    |
+---------------------------
+
+1.4.  Default Activity Rates
+----------------------------------
+|     Default Activity Rates     |
+----------------------------------
+| FF Toggle Rate (%)     | 12.5  |
+| I/O Toggle Rate (%)    | 12.5  |
+| Output Load (pF)       | 5.0   |
+| I/O Enable Rate (%)    | 100.0 |
+| BRAM Write Rate (%)    | 50.0  |
+| BRAM Enable Rate (%)   | 50.0  |
+----------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       0.00 |      0 |    ---    |       ---       |
+| Logic                 |       0.00 |     81 |      3840 |               2 |
+| Signals               |       0.00 |    110 |    ---    |       ---       |
+| IOs                   |       0.00 |     50 |       141 |              35 |
+| Static Power          |      41.02 |        |           |                 |
+| Total                 |      41.02 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.2.  Thermal Summary
+------------------------------
+|      Thermal Summary       |
+------------------------------
+| Effective TJA (C/W) | 36.1 |
+| Max Ambient (C)     | 83.5 |
+| Junction Temp (C)   | 26.5 |
+------------------------------
+
+2.3.  Power Supply Summary
+---------------------------------------------------------
+|                 Power Supply Summary                  |
+---------------------------------------------------------
+|                      | Total | Dynamic | Static Power |
+---------------------------------------------------------
+| Supply Power (mW)    | 41.02 | 0.00    | 41.02        |
+---------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.200 |              10.23 |                 0.00 |                  10.23 |
+| Vccaux                |          2.500 |              10.00 |                 0.00 |                  10.00 |
+| Vcco25                |          2.500 |               1.50 |                 0.00 |                   1.50 |
+---------------------------------------------------------------------------------------------------------------
+
+2.4.  Confidence Level
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                    Confidence Level                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       User Input Data       | Confidence |                        Details                         |                                                       Action                                                       |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Design implementation state | High       | Design is completely routed                            |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.  Details
+3.1.  By Hierarchy
+--------------------------------------------------------------------------------
+|  By Hierarchy   | Power (mW) | Logic Power (mW) | Signal Power (mW) | # LUTs |
+--------------------------------------------------------------------------------
+| Hierarchy total |   0.00     |   0.00           |   0.00            |     81 |
+|   kogge         |   0.00     |   0.00           |   0.00            |     81 |
+--------------------------------------------------------------------------------
+
+3.3.  By Resource Type
+3.3.1.  Core Dynamic
+3.3.1.1.  Logic
+-------------------------------------------------------------------------------------------------------
+|            Logic             | Power (mW) |      Type      | Clock (MHz) | Clock Name | Signal Rate |
+-------------------------------------------------------------------------------------------------------
+| Mxor_p_Result<13>1           |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<0>_Result1          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<10>_Result1         |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<11>_Result1         |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<12>_Result11        |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<12>_Result12        |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<12>_Result1_f5      |       0.00 | F5MUX (SLICEL) |       Async | Async      |         0.0 |
+| Mxor_sum<13>_Result1         |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<13>_Result1_SW0     |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<13>_Result1_SW0_SW0 |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<14>_Result11        |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<14>_Result12        |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<14>_Result1_f5      |       0.00 | F5MUX (SLICEL) |       Async | Async      |         0.0 |
+| Mxor_sum<15>_Result1         |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<1>_Result1          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<2>_Result1          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<3>_Result1          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<4>_Result1          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<5>_Result1          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<6>_Result1          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<7>_Result1          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<8>_Result1          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<9>_Result11         |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<9>_Result12         |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| Mxor_sum<9>_Result1_f5       |       0.00 | F5MUX (SLICEL) |       Async | Async      |         0.0 |
+| cg1_11_and000011             |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg1_2_or00001                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg1_3_or000021               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg1_4_and0000                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg1_4_and0000_SW0            |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_4_or000010               |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_4_or000040               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_4_or000054               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_4_or000054_SW0           |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_5_or0000                 |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_5_or000031               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_5_or0000_SW1             |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_6_or000026               |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_6_or000048               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_7_or0000                 |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg2_7_or0000_SW0             |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_10_or000046              |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_10_or000046_SW0          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_10_or00006               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_11_or0000110             |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_11_or0000191             |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_11_or0000192             |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_11_or000019_f5           |       0.00 | F5MUX (SLICEL) |       Async | Async      |         0.0 |
+| cg3_11_or0000221             |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_11_or000055_SW0          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_11_or000055_SW1          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_12_or000016_SW0          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_12_or000046              |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_13_or000015              |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_13_or000015_SW0          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_13_or00004               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_13_or000057_SW0          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or00001               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or000010              |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or0000111             |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or00001_SW0           |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or00001_SW1           |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or0000211             |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or000044              |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or000047              |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_14_or000047_SW0          |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_15_or0000111             |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_15_or000013              |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_15_or000026              |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_15_or000026_SW0          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_15_or000056              |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_15_or000056_SW0          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_8_or0000111              |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_8_or00002                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_8_or00008                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_9_or000010               |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_9_or0000110              |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_9_or0000144              |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_9_or0000144_SW0          |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_9_or000021               |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cg3_9_or0000221              |       0.00 | G (SLICEL)     |       Async | Async      |         0.0 |
+| cp_6_and00001                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cp_7_and00001                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cp_8_and00001                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+| cp_9_and00001                |       0.00 | F (SLICEL)     |       Async | Async      |         0.0 |
+|                              |            |                |             |            |             |
+| Total                        |       0.00 |                |             |            |             |
+-------------------------------------------------------------------------------------------------------
+
+3.3.1.2.  Signals
+----------------------------------------------------------------------------------------------------
+|     Signals     | Power (mW) | Signal Rate | % High | Fanout | Slice Fanout | Clock | Logic Type |
+----------------------------------------------------------------------------------------------------
+| N10             |       0.00 |        0.00 |   46.9 |      1 |            1 | Async | NA         |
+| N100            |       0.00 |        0.00 |   51.6 |      1 |            1 | Async | NA         |
+| N102            |       0.00 |        0.00 |   53.8 |      1 |            1 | Async | NA         |
+| N104            |       0.00 |        0.00 |   55.0 |      1 |            1 | Async | NA         |
+| N106            |       0.00 |        0.00 |   14.1 |      1 |            1 | Async | NA         |
+| N11             |       0.00 |        0.00 |   50.0 |      3 |            3 | Async | NA         |
+| N22             |       0.00 |        0.00 |   50.0 |      4 |            4 | Async | NA         |
+| N23             |       0.00 |        0.00 |   37.5 |      3 |            3 | Async | NA         |
+| N26             |       0.00 |        0.00 |   44.5 |      2 |            2 | Async | NA         |
+| N28             |       0.00 |        0.00 |   37.5 |      4 |            4 | Async | NA         |
+| N30             |       0.00 |        0.00 |   37.5 |      4 |            4 | Async | NA         |
+| N44             |       0.00 |        0.00 |   37.5 |      4 |            4 | Async | NA         |
+| N49             |       0.00 |        0.00 |   37.5 |      5 |            5 | Async | NA         |
+| N51             |       0.00 |        0.00 |   37.5 |      2 |            2 | Async | NA         |
+| N54             |       0.00 |        0.00 |   37.5 |      2 |            2 | Async | NA         |
+| N55             |       0.00 |        0.00 |   37.5 |      1 |            1 | Async | NA         |
+| N73             |       0.00 |        0.00 |    9.4 |      1 |            1 | Async | NA         |
+| N74             |       0.00 |        0.00 |   34.4 |      1 |            1 | Async | NA         |
+| N76             |       0.00 |        0.00 |   62.5 |      1 |            1 | Async | NA         |
+| N78             |       0.00 |        0.00 |   11.7 |      1 |            1 | Async | NA         |
+| N80             |       0.00 |        0.00 |   32.0 |      1 |            1 | Async | NA         |
+| N82             |       0.00 |        0.00 |   57.1 |      1 |            1 | Async | NA         |
+| N84             |       0.00 |        0.00 |   53.1 |      1 |            1 | Async | NA         |
+| N86             |       0.00 |        0.00 |   32.0 |      1 |            1 | Async | NA         |
+| N88             |       0.00 |        0.00 |   16.6 |      1 |            1 | Async | NA         |
+| N90             |       0.00 |        0.00 |   51.4 |      1 |            1 | Async | NA         |
+| N92             |       0.00 |        0.00 |   31.3 |      1 |            1 | Async | NA         |
+| N94             |       0.00 |        0.00 |   43.8 |      1 |            1 | Async | NA         |
+| N96             |       0.00 |        0.00 |   43.8 |      2 |            2 | Async | NA         |
+| N98             |       0.00 |        0.00 |   16.3 |      1 |            1 | Async | NA         |
+| a_0_IBUF        |       0.00 |        0.00 |   50.0 |      5 |            5 | Async | NA         |
+| a_10_IBUF       |       0.00 |        0.00 |   50.0 |      7 |            7 | Async | NA         |
+| a_11_IBUF       |       0.00 |        0.00 |   50.0 |      8 |            8 | Async | NA         |
+| a_12_IBUF       |       0.00 |        0.00 |   50.0 |      7 |            7 | Async | NA         |
+| a_13_IBUF       |       0.00 |        0.00 |   50.0 |      7 |            7 | Async | NA         |
+| a_14_IBUF       |       0.00 |        0.00 |   50.0 |      5 |            5 | Async | NA         |
+| a_15_IBUF       |       0.00 |        0.00 |   50.0 |      2 |            2 | Async | NA         |
+| a_1_IBUF        |       0.00 |        0.00 |   50.0 |      4 |            4 | Async | NA         |
+| a_2_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| a_3_IBUF        |       0.00 |        0.00 |   50.0 |      9 |            9 | Async | NA         |
+| a_4_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| a_5_IBUF        |       0.00 |        0.00 |   50.0 |      8 |            8 | Async | NA         |
+| a_6_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| a_7_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| a_8_IBUF        |       0.00 |        0.00 |   50.0 |      5 |            5 | Async | NA         |
+| a_9_IBUF        |       0.00 |        0.00 |   50.0 |     10 |           10 | Async | NA         |
+| b_0_IBUF        |       0.00 |        0.00 |   50.0 |      5 |            5 | Async | NA         |
+| b_10_IBUF       |       0.00 |        0.00 |   50.0 |      7 |            7 | Async | NA         |
+| b_11_IBUF       |       0.00 |        0.00 |   50.0 |      8 |            8 | Async | NA         |
+| b_12_IBUF       |       0.00 |        0.00 |   50.0 |      7 |            7 | Async | NA         |
+| b_13_IBUF       |       0.00 |        0.00 |   50.0 |      7 |            7 | Async | NA         |
+| b_14_IBUF       |       0.00 |        0.00 |   50.0 |      5 |            5 | Async | NA         |
+| b_15_IBUF       |       0.00 |        0.00 |   50.0 |      2 |            2 | Async | NA         |
+| b_1_IBUF        |       0.00 |        0.00 |   50.0 |      4 |            4 | Async | NA         |
+| b_2_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| b_3_IBUF        |       0.00 |        0.00 |   50.0 |      9 |            9 | Async | NA         |
+| b_4_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| b_5_IBUF        |       0.00 |        0.00 |   50.0 |      8 |            8 | Async | NA         |
+| b_6_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| b_7_IBUF        |       0.00 |        0.00 |   50.0 |      6 |            6 | Async | NA         |
+| b_8_IBUF        |       0.00 |        0.00 |   50.0 |      5 |            5 | Async | NA         |
+| b_9_IBUF        |       0.00 |        0.00 |   50.0 |     10 |           10 | Async | NA         |
+| cg1<2>          |       0.00 |        0.00 |   43.8 |      4 |            4 | Async | NA         |
+| cg1_4_and0000   |       0.00 |        0.00 |    9.4 |      2 |            2 | Async | NA         |
+| cg2<4>          |       0.00 |        0.00 |   46.2 |      1 |            1 | Async | NA         |
+| cg2<5>          |       0.00 |        0.00 |   50.8 |      1 |            1 | Async | NA         |
+| cg2<6>          |       0.00 |        0.00 |   44.4 |      1 |            1 | Async | NA         |
+| cg2<7>          |       0.00 |        0.00 |   44.5 |      1 |            1 | Async | NA         |
+| cg2_4_or000010  |       0.00 |        0.00 |   37.5 |      3 |            3 | Async | NA         |
+| cg2_4_or000040  |       0.00 |        0.00 |   12.5 |      1 |            1 | Async | NA         |
+| cg2_6_or000026  |       0.00 |        0.00 |   10.9 |      1 |            1 | Async | NA         |
+| cg3<10>         |       0.00 |        0.00 |   49.1 |      1 |            1 | Async | NA         |
+| cg3_10_or00006  |       0.00 |        0.00 |   10.8 |      1 |            1 | Async | NA         |
+| cg3_11_or000019 |       0.00 |        0.00 |    0.0 |      1 |            1 | Async | NA         |
+| cg3_12_or000046 |       0.00 |        0.00 |   25.0 |      1 |            1 | Async | NA         |
+| cg3_13_or000015 |       0.00 |        0.00 |   28.8 |      1 |            1 | Async | NA         |
+| cg3_13_or00004  |       0.00 |        0.00 |   43.8 |      1 |            1 | Async | NA         |
+| cg3_14_or000010 |       0.00 |        0.00 |   37.5 |      1 |            1 | Async | NA         |
+| cg3_14_or000044 |       0.00 |        0.00 |   56.3 |      1 |            1 | Async | NA         |
+| cg3_14_or000047 |       0.00 |        0.00 |   35.8 |      1 |            1 | Async | NA         |
+| cg3_15_or000013 |       0.00 |        0.00 |   53.1 |      1 |            1 | Async | NA         |
+| cg3_15_or000026 |       0.00 |        0.00 |   23.4 |      1 |            1 | Async | NA         |
+| cg3_8_or00002   |       0.00 |        0.00 |   53.1 |      1 |            1 | Async | NA         |
+| cg3_8_or00008   |       0.00 |        0.00 |   58.2 |      1 |            1 | Async | NA         |
+| cg3_9_or000010  |       0.00 |        0.00 |   14.7 |      1 |            1 | Async | NA         |
+| cg3_9_or0000110 |       0.00 |        0.00 |   37.5 |      1 |            1 | Async | NA         |
+| cg3_9_or00002   |       0.00 |        0.00 |   53.1 |      1 |            1 | Async | NA         |
+| cin_IBUF        |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| cout_OBUF       |       0.00 |        0.00 |   53.5 |      1 |            1 | Async | NA         |
+| cp<6>           |       0.00 |        0.00 |   25.0 |      3 |            3 | Async | NA         |
+| cp<7>           |       0.00 |        0.00 |   25.0 |      3 |            3 | Async | NA         |
+| cp<8>           |       0.00 |        0.00 |   25.0 |      3 |            3 | Async | NA         |
+| cp<9>           |       0.00 |        0.00 |   25.0 |      3 |            3 | Async | NA         |
+| p<13>           |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_0_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_10_OBUF     |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_11_OBUF     |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_12_OBUF     |       0.00 |        0.00 |    0.0 |      1 |            1 | Async | NA         |
+| sum_13_OBUF     |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_14_OBUF     |       0.00 |        0.00 |    0.0 |      1 |            1 | Async | NA         |
+| sum_15_OBUF     |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_1_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_2_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_3_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_4_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_5_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_6_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_7_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_8_OBUF      |       0.00 |        0.00 |   50.0 |      1 |            1 | Async | NA         |
+| sum_9_OBUF      |       0.00 |        0.00 |    0.0 |      1 |            1 | Async | NA         |
+|                 |            |             |        |        |              |       |            |
+| Total           |       0.00 |             |        |        |              |       |            |
+----------------------------------------------------------------------------------------------------
+
+3.3.2.  IO
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|         IO         | Power (mW) |   I/O Standard   | Signal Rate | % High | Clock (MHz) | Clock Name | Input Pins | Output Pins | Bidir Pins | Output Enable (%) | Output Load (pF) | Data Rate | IO LOGIC SERDES | IO DELAY | IBUF LOW PWR | Vccint (mW) | Vccaux (mW) | Vcco On-Chip Termal (mW)  | Vcco Supply Current (mA) |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| a<0>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<10>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<11>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<12>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<13>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<14>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<15>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<1>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<2>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<3>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<4>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<5>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<6>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<7>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<8>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| a<9>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<0>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<10>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<11>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<12>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<13>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<14>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<15>              |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<1>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<2>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<3>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<4>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<5>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<6>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<7>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<8>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| b<9>               |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| cin                |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| cout               |       0.00 | LVCMOS25_12_SLOW |        0.00 |   53.5 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<0>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<10>            |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<11>            |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<12>            |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<13>            |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<14>            |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<15>            |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<1>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<2>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<3>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<4>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<5>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<6>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<7>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<8>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| sum<9>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+|                    |            |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+| Internal VREFs (0) |       0.00 |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+|                    |            |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+| Total              |       0.00 |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Analysis completed: Tue Jun 11 11:28:53 2019
+----------------------------------------------------------------

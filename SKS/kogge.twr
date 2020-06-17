@@ -1,0 +1,292 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml kogge.twx kogge.ncd -o kogge.twr kogge.pcf
+
+Design file:              kogge.ncd
+Physical constraint file: kogge.pcf
+Device,package,speed:     xc3s200,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a<0>           |sum<0>         |    8.302|
+a<0>           |sum<1>         |    8.369|
+a<0>           |sum<2>         |    9.247|
+a<0>           |sum<3>         |   10.005|
+a<0>           |sum<4>         |   11.019|
+a<0>           |sum<5>         |   10.111|
+a<0>           |sum<6>         |   10.450|
+a<0>           |sum<7>         |   10.126|
+a<0>           |sum<8>         |   11.243|
+a<1>           |sum<1>         |    8.624|
+a<1>           |sum<2>         |    9.874|
+a<1>           |sum<3>         |   10.632|
+a<1>           |sum<4>         |   11.646|
+a<1>           |sum<5>         |    9.746|
+a<1>           |sum<6>         |   11.077|
+a<1>           |sum<7>         |   10.753|
+a<1>           |sum<8>         |   11.870|
+a<1>           |sum<9>         |   10.446|
+a<2>           |sum<2>         |    8.852|
+a<2>           |sum<3>         |    9.675|
+a<2>           |sum<4>         |   11.087|
+a<2>           |sum<5>         |   10.453|
+a<2>           |sum<6>         |   10.869|
+a<2>           |sum<7>         |   10.194|
+a<2>           |sum<8>         |   11.311|
+a<2>           |sum<9>         |   11.153|
+a<2>           |sum<10>        |   11.139|
+a<3>           |sum<3>         |   10.602|
+a<3>           |sum<4>         |   10.080|
+a<3>           |sum<5>         |   10.218|
+a<3>           |sum<6>         |   10.638|
+a<3>           |sum<7>         |    9.856|
+a<3>           |sum<8>         |   10.304|
+a<3>           |sum<9>         |    9.598|
+a<3>           |sum<10>        |   10.908|
+a<3>           |sum<11>        |   11.251|
+a<4>           |sum<4>         |    9.478|
+a<4>           |sum<5>         |   10.218|
+a<4>           |sum<6>         |   10.942|
+a<4>           |sum<7>         |   10.005|
+a<4>           |sum<8>         |   10.735|
+a<4>           |sum<9>         |   10.532|
+a<4>           |sum<10>        |   11.469|
+a<4>           |sum<11>        |   11.054|
+a<4>           |sum<12>        |   11.157|
+a<5>           |sum<5>         |    7.541|
+a<5>           |sum<6>         |    9.524|
+a<5>           |sum<7>         |    8.920|
+a<5>           |sum<8>         |    9.327|
+a<5>           |sum<9>         |    8.084|
+a<5>           |sum<10>        |   10.112|
+a<5>           |sum<11>        |   10.562|
+a<5>           |sum<12>        |    9.670|
+a<5>           |sum<13>        |    9.841|
+a<6>           |sum<6>         |    8.600|
+a<6>           |sum<7>         |    8.838|
+a<6>           |sum<8>         |    9.262|
+a<6>           |sum<9>         |    8.840|
+a<6>           |sum<10>        |    8.660|
+a<6>           |sum<11>        |   10.480|
+a<6>           |sum<12>        |    9.766|
+a<6>           |sum<13>        |   10.071|
+a<6>           |sum<14>        |   11.527|
+a<7>           |sum<7>         |    7.418|
+a<7>           |sum<8>         |    9.348|
+a<7>           |sum<9>         |    8.926|
+a<7>           |sum<10>        |    9.669|
+a<7>           |sum<11>        |    8.917|
+a<7>           |sum<12>        |    9.852|
+a<7>           |sum<13>        |    9.658|
+a<7>           |sum<14>        |   11.658|
+a<7>           |sum<15>        |   10.043|
+a<8>           |cout           |   10.305|
+a<8>           |sum<8>         |    7.102|
+a<8>           |sum<9>         |    8.603|
+a<8>           |sum<10>        |    9.505|
+a<8>           |sum<11>        |    9.913|
+a<8>           |sum<12>        |    8.456|
+a<8>           |sum<13>        |    9.494|
+a<8>           |sum<14>        |   11.216|
+a<8>           |sum<15>        |    9.983|
+a<9>           |cout           |   11.143|
+a<9>           |sum<9>         |    7.807|
+a<9>           |sum<10>        |    9.241|
+a<9>           |sum<11>        |   10.682|
+a<9>           |sum<12>        |    9.572|
+a<9>           |sum<13>        |    8.968|
+a<9>           |sum<14>        |   12.054|
+a<9>           |sum<15>        |   10.233|
+a<10>          |cout           |   11.000|
+a<10>          |sum<10>        |    7.051|
+a<10>          |sum<11>        |    9.099|
+a<10>          |sum<12>        |    9.454|
+a<10>          |sum<13>        |   10.109|
+a<10>          |sum<14>        |   10.260|
+a<10>          |sum<15>        |   10.044|
+a<11>          |cout           |   10.326|
+a<11>          |sum<11>        |    7.967|
+a<11>          |sum<12>        |    9.184|
+a<11>          |sum<13>        |    9.839|
+a<11>          |sum<14>        |   10.690|
+a<11>          |sum<15>        |    8.990|
+a<12>          |cout           |    9.783|
+a<12>          |sum<12>        |    7.418|
+a<12>          |sum<13>        |    7.851|
+a<12>          |sum<14>        |    9.002|
+a<12>          |sum<15>        |    9.651|
+a<13>          |cout           |    9.076|
+a<13>          |sum<13>        |    7.673|
+a<13>          |sum<14>        |    8.319|
+a<13>          |sum<15>        |    8.113|
+a<14>          |cout           |    9.254|
+a<14>          |sum<14>        |    9.445|
+a<14>          |sum<15>        |    7.755|
+a<15>          |cout           |    7.828|
+a<15>          |sum<15>        |    7.817|
+b<0>           |sum<0>         |    8.294|
+b<0>           |sum<1>         |    8.466|
+b<0>           |sum<2>         |    8.822|
+b<0>           |sum<3>         |    9.580|
+b<0>           |sum<4>         |   10.594|
+b<0>           |sum<5>         |    9.459|
+b<0>           |sum<6>         |   10.025|
+b<0>           |sum<7>         |    9.701|
+b<0>           |sum<8>         |   10.818|
+b<1>           |sum<1>         |    8.643|
+b<1>           |sum<2>         |    8.819|
+b<1>           |sum<3>         |    9.577|
+b<1>           |sum<4>         |   10.591|
+b<1>           |sum<5>         |    9.330|
+b<1>           |sum<6>         |   10.022|
+b<1>           |sum<7>         |    9.698|
+b<1>           |sum<8>         |   10.815|
+b<1>           |sum<9>         |   10.030|
+b<2>           |sum<2>         |    7.567|
+b<2>           |sum<3>         |    8.726|
+b<2>           |sum<4>         |   10.403|
+b<2>           |sum<5>         |    9.434|
+b<2>           |sum<6>         |   10.243|
+b<2>           |sum<7>         |    9.510|
+b<2>           |sum<8>         |   10.627|
+b<2>           |sum<9>         |   10.134|
+b<2>           |sum<10>        |   10.513|
+b<3>           |sum<3>         |    9.147|
+b<3>           |sum<4>         |    8.868|
+b<3>           |sum<5>         |    9.438|
+b<3>           |sum<6>         |    9.890|
+b<3>           |sum<7>         |    9.076|
+b<3>           |sum<8>         |    9.092|
+b<3>           |sum<9>         |    8.855|
+b<3>           |sum<10>        |   10.160|
+b<3>           |sum<11>        |   10.471|
+b<4>           |sum<4>         |    8.940|
+b<4>           |sum<5>         |    9.765|
+b<4>           |sum<6>         |   11.587|
+b<4>           |sum<7>         |    9.748|
+b<4>           |sum<8>         |   11.490|
+b<4>           |sum<9>         |    9.611|
+b<4>           |sum<10>        |   11.816|
+b<4>           |sum<11>        |   10.798|
+b<4>           |sum<12>        |   11.912|
+b<5>           |sum<5>         |    7.667|
+b<5>           |sum<6>         |   10.026|
+b<5>           |sum<7>         |    9.276|
+b<5>           |sum<8>         |    9.683|
+b<5>           |sum<9>         |    8.665|
+b<5>           |sum<10>        |   10.619|
+b<5>           |sum<11>        |   10.918|
+b<5>           |sum<12>        |    9.772|
+b<5>           |sum<13>        |   10.422|
+b<6>           |sum<6>         |    8.676|
+b<6>           |sum<7>         |    9.429|
+b<6>           |sum<8>         |    9.836|
+b<6>           |sum<9>         |    9.024|
+b<6>           |sum<10>        |    9.243|
+b<6>           |sum<11>        |   11.071|
+b<6>           |sum<12>        |    9.950|
+b<6>           |sum<13>        |   10.544|
+b<6>           |sum<14>        |   12.110|
+b<7>           |sum<7>         |    7.722|
+b<7>           |sum<8>         |    9.573|
+b<7>           |sum<9>         |    9.196|
+b<7>           |sum<10>        |   10.098|
+b<7>           |sum<11>        |    9.519|
+b<7>           |sum<12>        |   10.573|
+b<7>           |sum<13>        |   10.150|
+b<7>           |sum<14>        |   12.752|
+b<7>           |sum<15>        |   10.645|
+b<8>           |cout           |   10.342|
+b<8>           |sum<8>         |    7.554|
+b<8>           |sum<9>         |    8.575|
+b<8>           |sum<10>        |    9.477|
+b<8>           |sum<11>        |   10.054|
+b<8>           |sum<12>        |    8.493|
+b<8>           |sum<13>        |    9.466|
+b<8>           |sum<14>        |   11.253|
+b<8>           |sum<15>        |    9.919|
+b<9>           |cout           |   10.988|
+b<9>           |sum<9>         |    9.172|
+b<9>           |sum<10>        |    9.086|
+b<9>           |sum<11>        |   10.632|
+b<9>           |sum<12>        |   10.432|
+b<9>           |sum<13>        |    9.894|
+b<9>           |sum<14>        |   11.899|
+b<9>           |sum<15>        |   11.159|
+b<10>          |cout           |   10.865|
+b<10>          |sum<10>        |    7.878|
+b<10>          |sum<11>        |    9.431|
+b<10>          |sum<12>        |    9.654|
+b<10>          |sum<13>        |    9.670|
+b<10>          |sum<14>        |   10.125|
+b<10>          |sum<15>        |   10.376|
+b<11>          |cout           |   11.264|
+b<11>          |sum<11>        |    8.374|
+b<11>          |sum<12>        |    9.926|
+b<11>          |sum<13>        |   10.581|
+b<11>          |sum<14>        |   10.998|
+b<11>          |sum<15>        |    9.686|
+b<12>          |cout           |   10.442|
+b<12>          |sum<12>        |    7.736|
+b<12>          |sum<13>        |    7.825|
+b<12>          |sum<14>        |    9.022|
+b<12>          |sum<15>        |    9.964|
+b<13>          |cout           |    8.483|
+b<13>          |sum<13>        |    7.946|
+b<13>          |sum<14>        |    8.523|
+b<13>          |sum<15>        |    8.601|
+b<14>          |cout           |    9.342|
+b<14>          |sum<14>        |    9.533|
+b<14>          |sum<15>        |    7.733|
+b<15>          |cout           |    8.095|
+b<15>          |sum<15>        |    8.872|
+cin            |sum<0>         |    8.000|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Jun 11 11:34:56 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4489 MB
+
+
+

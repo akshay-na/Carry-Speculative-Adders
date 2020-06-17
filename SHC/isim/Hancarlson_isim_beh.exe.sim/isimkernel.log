@@ -1,0 +1,29 @@
+Command line:
+   Hancarlson_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51468
+
+Wed Jun 12 09:50:56 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5159.55 Meg
+
+ Total Signals          : 209
+ Total Nets             : 235
+ Total Signal Drivers   : 101
+ Total Blocks           : 30
+ Total Primitive Blocks : 29
+ Total Processes        : 102
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 315
+Total Line Count : 16
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5474.12 Meg
+
+Wed Jun 12 09:51:33 2019
+

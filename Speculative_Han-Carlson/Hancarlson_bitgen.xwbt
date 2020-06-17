@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=P:\PDF\Engineering notes ECE\VI Semester\ECP68 Mini Project\Carry Speculative Adders For Low Power VLSI\Final Code\Speculative_Han-Carlson\Hancarlson.ncd
+OUTFILE=P:\PDF\Engineering notes ECE\VI Semester\ECP68 Mini Project\Carry Speculative Adders For Low Power VLSI\Final Code\Speculative_Han-Carlson\Hancarlson.bit
+FAMILY=Spartan3
+PART=xc3s200-5pq208
+WORKINGDIR=P:\PDF\Engineering notes ECE\VI Semester\ECP68 Mini Project\Carry Speculative Adders For Low Power VLSI\Final Code\Speculative_Han-Carlson
+LICENSE=WebPack
+USER_INFO=211674489_0_0_970

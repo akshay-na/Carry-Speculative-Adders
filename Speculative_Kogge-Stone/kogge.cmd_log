@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Abrukas/Desktop/Final Code/Speculative_Kogge-Stone/kogge.xst" -ofn "C:/Users/Abrukas/Desktop/Final Code/Speculative_Kogge-Stone/kogge.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim kogge.ngc kogge_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "kogge.ngc" kogge.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o kogge_map.ncd kogge.ngd kogge.pcf 
+par -w -intstyle ise -ol high -t 1 kogge_map.ncd kogge.ncd kogge.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml kogge.twx kogge.ncd -o kogge.twr kogge.pcf 
+bitgen -intstyle ise -f kogge.ut kogge.ncd 
+bitgen -intstyle ise -f kogge.ut kogge.ncd 

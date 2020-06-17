@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/Users/Abrukas/Desktop/Final Code/Speculative_Han-Carlson/Hancarlson.xst" -ofn "C:/Users/Abrukas/Desktop/Final Code/Speculative_Han-Carlson/Hancarlson.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "Hancarlson.ngc" Hancarlson.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o Hancarlson_map.ncd Hancarlson.ngd Hancarlson.pcf 
+par -w -intstyle ise -ol high -t 1 Hancarlson_map.ncd Hancarlson.ncd Hancarlson.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Hancarlson.twx Hancarlson.ncd -o Hancarlson.twr Hancarlson.pcf 
+bitgen -intstyle ise -f Hancarlson.ut Hancarlson.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Hancarlson.ngc Hancarlson_synthesis.v 
+xst -intstyle ise -ifn "P:/PDF/Engineering notes ECE/VI Semester/ECP68 Mini Project/Final Code/Speculative_Han-Carlson/Hancarlson.xst" -ofn "P:/PDF/Engineering notes ECE/VI Semester/ECP68 Mini Project/Final Code/Speculative_Han-Carlson/Hancarlson.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Hancarlson.ngc Hancarlson_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "Hancarlson.ngc" Hancarlson.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o Hancarlson_map.ncd Hancarlson.ngd Hancarlson.pcf 
+par -w -intstyle ise -ol high -t 1 Hancarlson_map.ncd Hancarlson.ncd Hancarlson.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Hancarlson.twx Hancarlson.ncd -o Hancarlson.twr Hancarlson.pcf 
+bitgen -intstyle ise -f Hancarlson.ut Hancarlson.ncd 
+xst -intstyle ise -ifn "P:/PDF/Engineering notes ECE/VI Semester/ECP68 Mini Project/Final Code/Speculative_Han-Carlson/Hancarlson.xst" -ofn "P:/PDF/Engineering notes ECE/VI Semester/ECP68 Mini Project/Final Code/Speculative_Han-Carlson/Hancarlson.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Hancarlson.ngc Hancarlson_synthesis.v 
+xst -intstyle ise -ifn "P:/PDF/Engineering notes ECE/VI Semester/ECP68 Mini Project/Final Code/Speculative_Han-Carlson/Hancarlson.xst" -ofn "P:/PDF/Engineering notes ECE/VI Semester/ECP68 Mini Project/Final Code/Speculative_Han-Carlson/Hancarlson.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-5 "Hancarlson.ngc" Hancarlson.ngd  
+map -intstyle ise -p xc3s200-pq208-5 -cm area -ir off -pr off -c 100 -o Hancarlson_map.ncd Hancarlson.ngd Hancarlson.pcf 
+par -w -intstyle ise -ol high -t 1 Hancarlson_map.ncd Hancarlson.ncd Hancarlson.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Hancarlson.twx Hancarlson.ncd -o Hancarlson.twr Hancarlson.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Hancarlson.ngc Hancarlson_synthesis.v 
+bitgen -intstyle ise -f Hancarlson.ut Hancarlson.ncd 

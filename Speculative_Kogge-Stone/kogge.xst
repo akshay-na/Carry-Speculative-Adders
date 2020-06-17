@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Abrukas/Desktop/Final Code/Speculative_Kogge-Stone/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Abrukas/Desktop/Final Code/Speculative_Kogge-Stone/xst"
+elaborate
+-ifn kogge.prj
+-ifmt mixed

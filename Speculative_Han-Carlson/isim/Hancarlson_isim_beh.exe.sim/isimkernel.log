@@ -1,0 +1,10 @@
+Command line:
+   Hancarlson_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51481
+
+Wed Jun 12 11:22:11 2019
+
+
+ Elaboration Time: 0.109375 sec
