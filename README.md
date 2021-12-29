@@ -1,2 +1,5 @@
 # Carry-Speculative-Adders
-3rd year ECE mini project
+
+This was the pre-final year project udring my engineering days.
+
+The main purpose of this project was to optimize the current logic adders to make them work faster with optimized power consumption. Adder is a digital circuit that performs addition of numbers. In many computers and other kinds of processors adders are used in the ALU (Arithmetic Logical Units). They are also utilized in other parts of the processor, where they are used to calculate addresses, table indices, increment and decrement operators, and similar operations. Speculative variable latency adders have attracted strong interest due to their capability to reduce average delay compared to traditional architectures and to make addition operations more efficient..This process gives high speed computations with high fan-out and makes carry operations easier. In this project simulation of variable latency speculative Han-Carlson adder and Kogge-Stone adder using Xilinx ISE 2014 software and compare the efficiency of both parallel prefix adders for 16bit binary variable will be shown.
